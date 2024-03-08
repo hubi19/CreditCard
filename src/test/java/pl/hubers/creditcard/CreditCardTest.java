@@ -26,8 +26,8 @@ public class CreditCardTest {
 
         try {
             card.assignCredit(BigDecimal.valueOf(50));
-            fail("Exeption should be raised");
-        } catch (CreditBe;pwThreholdException e) {
+            fail("Exception should be raised");
+        } catch (CreditBelowThresholdException e) {
             assertTrue(true);
         }
     }
